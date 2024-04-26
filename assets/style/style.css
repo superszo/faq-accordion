@@ -38,10 +38,9 @@ h2 {
 .faq-card {
     border-radius: 16px;
     background-color: white;
-    width: 520px;
+    max-width: 520px;
     padding: 40px;
-    margin: auto;
-
+    margin: 24px 24px 0 24px;
 }
 
 h1::before {
@@ -95,3 +94,25 @@ p {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        background-image: url(../images/background-pattern-mobile.svg);
+
+    }
+
+    .faq-card {
+        padding: 24px;
+      
+    }
+
+
+
+}
+
